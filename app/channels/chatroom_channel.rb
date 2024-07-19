@@ -5,8 +5,5 @@ class ChatroomChannel < ApplicationCable::Channel
 
   def unsubscribed
   end
-  received(data) {
-    const messages = document.getElementById('messages')
-    messages.insertAdjacentHTML('beforeend', data['message'])
-  }
+  
 end
