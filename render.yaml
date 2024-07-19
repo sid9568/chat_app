@@ -1,7 +1,7 @@
 databases:
   - name: chat_app
-    databaseName: chat_app_development
-    user: postgres
+    databaseName: chat_ua9o
+    user: chat_ua9o_user
     plan: free
 
 services:
