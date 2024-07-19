@@ -82,5 +82,5 @@ production:
   <<: *default
   database: chat_app_production
   username: chat_app
-  url: <%= ENV['internal database'] %>
+  url: <%= ENV['DATABASE_URL'] %> # ENTER THIS *EXACTLY* AS THIS, THIS READS THE VALUE OF THE DATABASE_URL environment variable programatically
   password: <%= ENV['password'] %>
