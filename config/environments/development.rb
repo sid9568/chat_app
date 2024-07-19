@@ -38,7 +38,9 @@ Rails.application.configure do
   config.active_support.disallowed_deprecation_warnings = []
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
-  config.action_cable.url =  "ws://https://chat-app-pp9m.onrender.com/cable"
+  config.action_cable.url =  "ws://http://localhost:3000//cable"
+    config.action_cable.url = "wss://chat-app-pp9m.onrender.com/cable"
+  config.action_cable.allowed_request_origins = [ 'https://chat-app-pp9m.onrender.com', 'http://chat-app-pp9m.onrender.com' ]
   config.action_cable.mount_path = '/cable'
   config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
   config.action_cable.disable_request_forgery_protection = true
